@@ -1,0 +1,25 @@
+\documentclass[twocolumn]{article}
+\usepackage{amsmath,amssymb}
+
+\title{HENA: Hierarchically Evolving Neural Automata}
+\author{Harsh Joshi}
+\date{\today}
+
+\input{shared/monad/definitions}
+\input{shared/muon/definitions}
+\input{shared/hena/definitions}
+
+\begin{document}
+\raggedbottom
+\maketitle
+
+\begin{abstract}
+HENA proposes a differentiable collective of local reasoning units, sparse learned communication and bounded memory. It asks whether learning the routes, memory access and local updates together can produce useful hierarchy under explicit compute, communication and memory budgets. The first system composes stock open-weight models through MUON's unit interface; learned routing and differentiable memory remain further research targets. This statement defines the proposed objective, resource comparisons and failure conditions. It reports no swarm implementation or experimental result.
+\end{abstract}
+
+\input{sections/00_problem_statement}
+
+\bibliographystyle{plain}
+\bibliography{HENA}
+
+\end{document}

@@ -1,0 +1,7 @@
+syntax = "proto3";
+package hena;
+
+// For the messages units will use to read and write the swarm's shared,
+// bounded memory. HENA owns that store, its retention and its recovery, and may
+// describe what happens to it with Reckon's record protocol. No message
+// is declared yet.
